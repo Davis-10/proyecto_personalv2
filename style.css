@@ -1,0 +1,147 @@
+:root { /*Mi paleta de trabajo: colores, fuentes y demás*/
+--fuentePrincipal: "Oswald", sans-serif;
+
+--colorPrimario: #2a2a2a;
+--colorSecundario: #333333;
+--colorTerciario: #1a1a1a;
+--colorTexto: #f2f2f2;    
+}   
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%; /* 1 rem = 10px */
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+
+
+/* ----------- Estilos Generales --------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    background-color: #1a1a1a;
+    color: var(--colorTexto);
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+p {
+    font-size: 1.8rem;
+}
+
+
+
+/* -------- Sección Hero -------------*/
+.hero {
+    background: var(--colorPrimario);
+    color: var(--colorTexto);
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.hero h1 {
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.cta-btn {
+    background-color: #4bffb1;
+    color: #1a1a1a;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+}
+
+/* ------------- Sección Servicios -----------------*/
+.services {
+    background-color: #2a2a2a;
+    color: var(--colorTexto);
+    padding: 5rem 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.service-item {
+    background: #333333;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.service-item h3 {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 940px) {
+    .contenido-services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --------------- Sección Testimonios ------------------*/
+.testimonials {
+    background-color: #2a2a2a;
+    color: var(--colorTexto);
+    padding: 5rem 0;
+}
+
+.testimonials p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ---------------Sección Contacto ------------------ */
+.contact {
+    background-color: #1a1a1a;
+    color: var(--colorTexto);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 40px;
+}
+
+/* ------------------- Footer -------------------------*/
+footer {
+    background-color: #333333;
+    color: var(--colorTexto);
+    text-align: center;
+    padding: 2rem;
+}
