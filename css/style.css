@@ -4,7 +4,8 @@
 --colorPrimario: #2a2a2a;
 --colorSecundario: #333333;
 --colorTerciario: #1a1a1a;
---colorTexto: #f2f2f2;    
+--colorTexto: #f2f2f2;  
+--colorBoton:  #4bffb1;   
 }   
 
 html {
@@ -44,6 +45,8 @@ h1 {
 }
 h2 {
     font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
 }
 h3{
     font-size: 2.8rem;
@@ -72,8 +75,8 @@ p {
 }
 
 .cta-btn {
-    background-color: #4bffb1;
-    color: #1a1a1a;
+    background-color: var(--colorBoton);
+    color: var(--colorTerciario);
     padding: 1rem 2rem;
     text-decoration: none;
     font-size: 1.6rem;
@@ -82,18 +85,12 @@ p {
 
 /* ------------- Sección Servicios -----------------*/
 .services {
-    background-color: #2a2a2a;
     color: var(--colorTexto);
     padding: 5rem 0;
 }
 
-.services h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
 .service-item {
-    background: #333333;
+    background: var(--colorSecundario);
     margin: 2rem;
     padding: 2rem;
     border-radius: 1rem;
@@ -112,7 +109,7 @@ p {
 
 /* --------------- Sección Testimonios ------------------*/
 .testimonials {
-    background-color: #2a2a2a;
+    background-color: var(--colorSecundario);
     color: var(--colorTexto);
     padding: 5rem 0;
 }
@@ -124,23 +121,19 @@ p {
 
 /* ---------------Sección Contacto ------------------ */
 .contact {
-    background-color: #1a1a1a;
+    background-color: var(--colorTerciario);
     color: var(--colorTexto);
     padding: 50px 0;
     text-align: center;
 }
 
-.contact h2 {
-    margin-bottom: 20px;
-}
-
 .contact p {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 /* ------------------- Footer -------------------------*/
 footer {
-    background-color: #333333;
+    background-color: var(--colorSecundario);
     color: var(--colorTexto);
     text-align: center;
     padding: 2rem;
