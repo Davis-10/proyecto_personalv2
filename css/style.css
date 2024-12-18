@@ -59,7 +59,13 @@ p {
 
 /* -------- Sección Hero -------------*/
 .hero {
-    background: var(--colorPrimario);
+    background-image: url(../img/fondo_hero.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero__texto {
     color: var(--colorTexto);
     text-align: center;
     padding: 10rem 0;
