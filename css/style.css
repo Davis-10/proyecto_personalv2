@@ -59,7 +59,7 @@ p {
 
 /* -------- Sección Hero -------------*/
 .hero {
-    background-image: url(../img/fondo_hero.jpg);
+    background-image: url(../img/hero2.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,6 +85,12 @@ p {
     text-decoration: none;
     font-size: 1.6rem;
     border-radius: 1rem;
+}
+
+@media (min-width: 468px) {
+    .hero{
+        height: 70vh;
+    }
 }
 
 /* ------------- Sección Servicios -----------------*/
